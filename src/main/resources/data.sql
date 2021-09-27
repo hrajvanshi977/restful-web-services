@@ -1,0 +1,12 @@
+--create table user (id INTEGER not null, date timestamp, name varchar(255), primary key(id));
+create table post (id integer not null, description varchar(255), user_id integer, primary key (id));
+create table user (id integer not null, date timestamp, name varchar(255), primary key (id));
+--create table user_post (user_id integer not null, post_id integer not null);
+insert into user values(1, sysdate, 'Himanshu');
+insert into user values(2, sysdate, 'Rahul');
+--insert into user values(3, sysdate, 'Hemant');
+--insert into user values(4, sysdate, 'xyz');
+insert into post values(1001, 'My First Post', 1);
+insert into post values(1002, 'My First Post', 1);
+insert into post values(1003, 'My First Post', 2);
+insert into post values(1004, 'My First Post', 2);
